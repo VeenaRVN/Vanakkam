@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bokeh"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--Add TitleBar-->
+    <LinearLayout
+        android:id="@+id/layout1"
+        style="@style/TitleBar">
+
+        <ImageView
+            android:id="@+id/img1"
+            style="@style/TitleBarLogo"
+            android:layout_marginBottom="1dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:background="@null"
+            android:onClick="onHome"
+            android:paddingBottom="1dip"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/TitleBarText"
+            android:paddingLeft="8dip"
+            android:text="@string/home" />
+
+    </LinearLayout>
+
+    <!--Add Birthday Category-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/birthday"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onBirthday"
+            android:paddingBottom="30dp"
+            android:paddingTop="30dp"
+            android:text="Birthday"
+            android:textAlignment="center"
+            android:textAppearance="@style/DashboardText"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <!--Add Christmas Category-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/christmas"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onChristmas"
+            android:text="Christmas"
+            android:textAlignment="center"
+            android:textAppearance="@style/DashboardText"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <!--Add Wedding Category-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="107dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/wedding"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onWedding"
+            android:text="Wedding"
+            android:textAlignment="center"
+            android:textAppearance="@style/DashboardText"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+

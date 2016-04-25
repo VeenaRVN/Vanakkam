@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="title_background">#03C9A9</color>
+    <color name="title_text">#ffffffff</color>
+    <color name="dashboard_text">#181818</color>
+    <color name="textBody">#ff29549f</color>
+    <color name="foreground">#29549f</color>
+    <color name="background">#FF4081</color>
+
+    <color name="birthday">#DB0A5B</color>
+    <color name="dashboard">#fcf8fa</color>
+    <color name="birthdayCustomize">#f7e9ee</color>
+    <color name="christmas">#F62459</color>
+    <color name="wedding">#F64747</color>
+    <color name="thankyou">#E26A6A</color>
+
+    <color name="login">#f54e24</color>
+    <color name="primary">#E43F3F</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>
+    <color name="accent">#FFFFFF</color>
+
+</resources>

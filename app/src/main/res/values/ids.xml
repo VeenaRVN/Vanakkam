@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="title_container" />
+    <item type="id" name="title_logo" />
+    <item type="id" name="title_text" />
+    <item type="id" name="dashboard_text" />
+    <item type="id" name="listCategories" />
+    <item type="id" name="gvBirthdayCategory"/>
+    <item type="id" name="gvChristmasCategory"/>
+    <item type="id" name="gvWeddingCategory"/>
+    <item type="id" name="gvFromPhone"/>
+    <item type="id" name="imgDetail"/>
+    <item type="id" name="textDetail"/>
+    <item type="id" name="btnAddText"/>
+</resources>

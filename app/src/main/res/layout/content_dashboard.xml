@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/bokeh"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--Add TitleBar-->
+    <LinearLayout
+        android:id="@+id/layout1"
+        style="@style/TitleBar">
+
+        <ImageView
+            android:id="@+id/img1"
+            style="@style/TitleBarLogo"
+            android:layout_marginBottom="1dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:background="@null"
+            android:onClick="onHome"
+            android:paddingBottom="1dip"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/TitleBarText"
+            android:paddingLeft="8dip"
+            android:text="@string/home" />
+
+    </LinearLayout>
+
+    <!--Pick Category-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/login"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="310dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onPickCategory"
+            android:text="Pick Category"
+            android:textAlignment="center"
+            android:textAppearance="@style/DashboardText"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <!--Pick From Phone-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/login"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onPickPhone"
+            android:text="Pick From Phone"
+            android:textAlignment="center"
+            android:textAppearance="@style/DashboardText"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <!--Add Reminder-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/login"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:onClick="onAddReminder"
+            android:text="Add Reminder"
+            android:textAlignment="center"
+            android:textAppearance="@style/DashboardText"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+

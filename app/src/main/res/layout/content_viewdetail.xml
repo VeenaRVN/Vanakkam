@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bokeh"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <!--Add TitleBar-->
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        style="@style/TitleBar">
+
+        <ImageView
+            android:id="@+id/img1"
+            style="@style/TitleBarLogo"
+            android:layout_marginBottom="1dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginTop="1dip"
+            android:background="@null"
+            android:onClick="onHome"
+            android:paddingBottom="1dip"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/TitleBarText"
+            android:paddingLeft="8dip"
+            android:text="@string/home" />
+
+
+
+
+    </LinearLayout>
+
+    <!--Add Detailed ImageView-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/birthdayCustomize">
+
+        <!--Add ImageView-->
+        <ImageView
+            android:id="@+id/imgDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp" />
+
+        <!--Add EditText-->
+        <EditText
+            android:id="@+id/textDetail"
+            android:layout_width="320dp"
+            android:layout_height="80dp"
+            android:text="@string/defaulttext"
+            android:layout_above="@+id/btnAddText"
+            android:layout_centerHorizontal="true" />
+
+        <!--Add Button AddText-->
+        <Button
+            android:id="@+id/btnAddText"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Add Text"
+            android:layout_above="@+id/btnSendImage"
+            android:layout_alignLeft="@+id/textDetail"
+            android:layout_alignStart="@+id/textDetail" />
+
+        <!--Add Button Share Image-->
+        <Button
+            android:id="@+id/btnSendImage"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Share"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/textDetail"
+            android:layout_alignStart="@+id/textDetail" />
+
+        <!--Add Button Print Image-->
+        <Button
+            android:id="@+id/btnPrintImage"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Print"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:text="Done"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textDetail"
+            android:layout_alignEnd="@+id/textDetail" />
+
+        <Button
+            android:id="@+id/btnResetImage"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Reset"
+            android:layout_below="@+id/textDetail"
+            android:layout_alignRight="@+id/textDetail"
+            android:layout_alignEnd="@+id/textDetail" />
+
+    </RelativeLayout>
+
+</LinearLayout>

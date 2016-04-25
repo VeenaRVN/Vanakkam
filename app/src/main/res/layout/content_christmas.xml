@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <!--Add TitleBar-->
+
+    <LinearLayout style="@style/TitleBar"
+        android:id="@+id/layout1">
+
+        <ImageView style="@style/TitleBarLogo"
+            android:src="@drawable/logo"
+            android:onClick="onHome"
+            android:id="@+id/img1"
+            android:layout_marginTop = "1dip"
+            android:layout_marginRight="1dip"
+            android:layout_marginLeft="2dip"
+            android:layout_marginBottom = "1dip"
+            android:paddingBottom = "1dip"
+            android:background="@null"
+            android:paddingLeft="1dp"
+            android:paddingRight="1dp" />
+
+        <TextView style="@style/TitleBarText"
+            android:id="@+id/tv1"
+            android:paddingLeft = "8dip"
+            android:text="@string/home"/>
+
+    </LinearLayout>
+
+    <!--Add GridView of Christmas Cards-->
+
+    <GridView
+        android:id="@+id/gvChristmasCategory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnWidth="90dp"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="50dp"
+        android:horizontalSpacing="50dp"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
+        />
+
+</LinearLayout>
